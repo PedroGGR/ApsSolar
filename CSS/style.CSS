@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(#000000, rgb(65, 64, 64))
+}
+
+section,
+footer {
+    padding: 54px 0;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+p {
+    color: #0000009c;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn {
+    background-color: rgb(245, 159, 31);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 1s;
+}
+
+.btn:hover {
+    background-color: rgb(255, 51, 0);
+}
+
+header {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul a {
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+
+nav ul a::after {
+    content: "";
+    background-color: rgb(245, 159, 31);
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.banner .banner-text {
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner .banner-text h1 {
+    font-size: 80px;
+    color: white;
+}
+
+.banner .banner-text p {
+    font-size: 20px;
+    color: #ffffffb7;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+
+
+/* energia solar */
+
+.container-energia-solar {
+    display: flex;
+    align-items: center;
+}
+
+.sobre-energia {
+    width: 65%;
+    padding: 40px;
+}
+
+.energia-solar-home-img {
+    width: 25%;
+    padding: 15px 20px;
+}
+
+.sobre-energia h3 {
+    font-size: 60px;
+    color: rgb(245, 159, 31);
+    transition: all 1s;
+}
+
+.sobre-energia h3:hover {
+    stroke: bisque;
+    transform: scale(1.1);
+}
+
+.sobre-energia p {
+    font-size: 15px;
+    margin: 5px 0 10px 0;
+    color: rgb(161, 161, 161);
+}
+
+
+/* beneficios */
+
+.beneficios {
+    padding: 30px;
+    margin: 5px 10 5px 10;
+    background-color: linear-gradient(#000000, rgb(161, 161, 161));
+}
+
+.beneficios .beneficios-title {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(245, 159, 31);
+    margin: 35px 0;
+}
+
+.beneficios .card {
+    width: 300px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5 10px 5;
+    background-color: rgb(245, 159, 31);
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+.beneficios .card:hover {
+    stroke: black;
+    transform: scale(1.1);
+}
+
+.beneficios .card h3 {
+    font-size: 20px;
+    margin: 5px 0 10px 0;
+}
+
+.beneficios .card p {
+    text-align: center;
+}
+
+.beneficios .card svg {
+    width: 60px;
+    height: 60px;
+}
+
+.beneficios .beneficios-cards {
+    margin-top: 25px;
+    display: flex;
+    max-width: 950px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.servicos {
+    background: linear-gradient(#000000, rgb(161, 161, 161));
+    height: 550px;
+    display: flex;
+}
+
+.servicos .Servicos-title {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(245, 159, 31);
+    margin: 0px 0px 0px 60px;
+    width: 20px;
+}
+
+.servicos .card-servicos {
+    width: 280px;
+    height: 360px;
+    background: rgb(104, 104, 104);
+    border-radius: 24px 0px;
+    margin: 80px 20px 60px 50px;
+}
+
+.servicos .card-image {
+    width: 280px;
+    height: 200px;
+    border-radius: 24px 0 0 0;
+    border: 7px solid rgb(104, 104, 104);
+}
+
+.servicos .card-servicos {
+    transition: all 1s;
+}
+
+.servicos .card-servicos:hover {
+    transform: scale(1.1);
+}
+
+.servicos.card-content {
+    padding: 0 20px;
+}
+
+.servicos .card-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 16px;
+    padding: 15px 15 10px 5;
+}
+
+.servicos .card-content ul li {
+    font-size: 1.2;
+    display: flex;
+    align-items: center;
+    margin: 3px 23px;
+    color: rgb(255, 255, 255);
+    font: bolder;
+}
+
+.servicos.card-content li {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+.servicos .card-content h1 {
+    font-size: 20px;
+    padding: 3px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    margin: 0 25px 7px;
+}
+
+.rodape {
+    background: black;
+    height: 40px;
+    display: flex;
+}
+
+.rodape .rodape-final {
+    align-items: center;
+    margin: auto;
+}
+
+.rodape .rodape-image {
+    margin: 0px 0px 20px 0px;
+}
+
+
+/* quemsomos */
+
+.quem1 {
+    text-align: center;
+    background-color: #000000;
+}
+
+.quem1 .escrita h3 {
+    color: rgb(189, 188, 188);
+    font-size: 30px;
+    margin: 10px 20px 20px 60px;
+}
+
+.quem1 .escrita p {
+    color: rgb(161, 161, 161);
+    ;
+    font-size: 17px;
+    margin: 10px 20px 20px 60px;
+}
+
+.quem {
+    background: linear-gradient(#000000, rgb(161, 161, 161));
+    height: 400px;
+    display: flex;
+}
+
+.quem .card-quem {
+    width: 300px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 10px 15px;
+    background-color: rgba(0, 174, 255, 0.507);
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+.quem .card-quem {
+    transition: all 1s;
+}
+
+.quem .card-quem:hover {
+    transform: scale(1.1);
+}
+
+.quem .card-quem h3 {
+    font-size: 30px;
+    margin: 5px 0 10px 0;
+    color: white;
+}
+
+.quem .card-quem p {
+    text-align: center;
+    color: white;
+}
+
+.quem .card-quem svg {
+    width: 60px;
+    height: 60px;
+}
+
+.quem .cards-quem {
+    margin-top: 30px;
+    display: flex;
+    max-width: 950px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.Sobre-energia-solar {
+    height: 450px;
+    display: flex;
+}
+
+.Sobre-energia-solar .Sobre-card {
+    width: 500px;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 10px 15px;
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+.Sobre-energia-solar .Sobre-card {
+    transition: all 1s;
+}
+
+.Sobre-energia-solar .Sobre-card:hover {
+    transform: scale(1.1);
+}
+
+.Sobre-energia-solar .Sobre-card h3 {
+    text-align: center;
+    margin: 5px 0 10px 0;
+    color: wheat;
+}
+
+.Sobre-energia-solar .Sobre-card p {
+    text-align: center;
+    color: wheat
+}
+
+.Sobre-energia-solar .Sobre-card {
+    margin-top: 30px;
+    display: flex;
+    max-width: 950px;
+    justify-content: space-between;
+    margin: auto;
+}
